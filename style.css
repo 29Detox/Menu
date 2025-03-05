@@ -1,0 +1,596 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #004d8c, #0066cc); /* Deep blue gradient */
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Container Styling */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+/* Main Heading Styling */
+h1 {
+    text-align: center;
+    font-size: 90px; /* Increased font size for more prominence */
+    font-family: 'Cinzel', serif; /* Elegant serif font */
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px; /* Added space between letters for a refined look */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 255, 255, 0.5); /* Soft shadow for glow effect */
+    margin-bottom: 40px; /* Added space below */
+    padding: 20px;
+    transition: transform 0.4s ease, color 0.3s ease;
+}
+
+/* Hover Effect on Main Heading */
+h1:hover {
+    color: #00aaff; /* Light blue color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 255, 255, 0.8); /* Enhanced glowing effect */
+}
+
+/* Animation to make the text fade in */
+h1 {
+    animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: 'Playfair Display', serif;
+    border-bottom: 4px solid #00aaff;
+    padding-bottom: 10px;
+}
+
+/* Menu Section Styling */
+.menu-section {
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1); /* Slight transparency */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect on Menu Sections */
+.menu-section:hover {
+    transform: translateY(-10px); /* Slight upward movement */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
+}
+
+/* Menu Section Header Styling */
+.menu-section h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #00aaff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Sub-section Styling (Breakfast, Lunch, etc.) */
+.sub-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #00aaff, #0066cc); /* Gradient background */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect on Sub-sections */
+.sub-section:hover {
+    transform: translateY(-10px); /* Slight upward movement */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+/* Sub-section Header Styling */
+.sub-section h4 {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.sub-section h4::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: #ffffff;
+    bottom: -10px;
+    left: 25%;
+}
+
+/* Menu Item Styling */
+.sub-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Adding Hover Effects on Each Menu Item */
+.sub-section li {
+    font-size: 20px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.sub-section li i {
+    color: #b3b3b3;
+}
+
+.sub-section li:hover {
+    color: #00aaff; /* Change text color on hover */
+    background-color: #003366; /* Dark blue background on hover */
+    transform: translateX(5px); /* Slide effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Box-shadow effect */
+}
+
+/* Logo Styling */
+.logo {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Rounded Square Logo Styling */
+.logo img {
+    width: 150px; /* Fixed width for the logo */
+    height: 150px; /* Same height for a square shape */
+    object-fit: cover; /* Ensures the image covers the square area */
+    border-radius: 15px; /* Slightly rounded corners for a soft look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: add a shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+    color: #bbb;
+    padding: 10px;
+    background-color: #003366;
+    border-radius: 0 0 20px 20px;
+    letter-spacing: 1px;
+}
+/* Milder Styling for Main Section Headings (Veg Menu, Non-Veg Menu, Ala Carte Menu) */
+h2.section-heading {
+    text-align: center;
+    font-size: 36px; /* Moderate size for better visibility */
+    font-family: 'Poppins', sans-serif; /* Soft, modern sans-serif font */
+    color: #ffffff; /* White color for readability */
+    font-weight: 600; /* Medium weight for clarity */
+    text-transform: capitalize; /* Capitalize the first letter of each word */
+    margin-bottom: 20px; /* Space below each heading */
+    letter-spacing: 1px; /* Small letter-spacing for elegance */
+    padding: 12px 25px; /* Padding to give space around the text */
+    background-color: rgba(0, 0, 0, 0.2); /* Slightly transparent background */
+    border-radius: 8px; /* Round corners for a modern look */
+    transition: all 0.3s ease; /* Smooth transition effect for hover */
+}
+
+/* Hover Effect for Section Headings */
+h2.section-heading:hover {
+    color: #00aaff; /* Light blue color when hovered */
+    background-color: rgba(0, 0, 0, 0.4); /* Darker background on hover */
+    transform: scale(1.05); /* Slightly scale up the heading on hover */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 255, 255, 0.7); /* Glowing effect on hover */
+}
+/* Styling for the "Choose any X dishes" description */
+.choose-dishes {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333333; /* Change this color to any color you prefer */
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Styling for the typing space */
+.typing-space {
+    display: inline-block;
+    width: 200px; /* Adjust width to your preference */
+    height: 20px; /* Adjust height for better space */
+    border-bottom: 2px solid #fff; /* Create a typing area with a line */
+    padding: 0 5px; /* Adds some space inside the typing area */
+    color: #aaa; /* Light color to represent untyped space */
+    font-style: italic; /* Italicize text to show it's a placeholder */
+}
+
+/* Optional: Hover effect to indicate the typing area */
+.typing-space:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Highlight the typing area on hover */
+}
+/* Section heading for Main Course */
+.section-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f8e71c; /* Gold-like color for emphasis */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Timing text */
+.menu-timing {
+    font-size: 16px;
+    color: #eee;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Subsection headings */
+.subsection-heading {
+    font-size: 20px;
+    color: #ffd700; /* Golden yellow for subsection headings */
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Note for choosing dishes */
+.choose-note {
+    font-size: 14px;
+    font-style: italic;
+    color: #ddd;
+    margin-left: 10px;
+}
+
+/* List styling for menu items */
+.menu-list,
+.combo-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 20px;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* List item hover effect */
+.menu-list li,
+.combo-list li {
+    margin-bottom: 8px;
+    padding: 5px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.menu-list li:hover,
+.combo-list li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Styling for "Served with" section */
+.served-with {
+    font-size: 16px;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+/* Combo headings */
+.combo-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+/* Styling for subheadings in the Main Course section */
+.sub-section h5 {
+    font-size: 1.2rem; /* Slightly larger font size */
+    color: #ffcc00; /* Highlighted color (golden yellow) */
+    font-family: 'Playfair Display', serif; /* Elegant font */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Capitalize all letters */
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #ffcc00; /* Add an underline */
+    display: inline-block; /* Keep it neat */
+    padding-bottom: 2px;
+}
+/* Styling for smaller headings inside Special Dinner Options */
+.combo-section h6 {
+    font-size: 1.1rem; /* Slightly larger font size */
+    color: #00c4cc; /* Eye-catching cyan color */
+    font-family: 'Poppins', sans-serif; /* Clean, modern font */
+    font-weight: 600; /* Semi-bold for emphasis */
+    text-transform: capitalize; /* Title-case letters */
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 3px 5px; /* Add padding for a boxed look */
+    background-color: #002244; /* Slightly darker blue for contrast */
+    border-radius: 5px; /* Rounded corners for a modern feel */
+    display: inline-block; /* Keep the size compact */
+}
+/* Styling for 'Accompaniments' text */
+.served-with {
+    font-size: 1rem; /* Standard readable size */
+    color: #ffffff; /* White text to contrast with the background */
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    font-weight: 500; /* Semi-bold for better emphasis */
+    text-align: left; /* Align left for consistency */
+    margin-top: 10px;
+    padding: 8px;
+    border-left: 4px solid #00c4cc; /* Add a decorative left border */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle translucent background */
+    border-radius: 5px; /* Rounded corners */
+}
+/* Styling for 'Choose any dishes' text */
+.highlight-choose {
+    font-size: 1rem; /* Set font size for readability */
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    color: #ffe600; /* Bright golden yellow for contrast */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center align the text */
+    background-color: rgba(0, 0, 0, 0.2); /* Add a translucent black background */
+    padding: 5px 10px; /* Add padding for spacing */
+    border-radius: 8px; /* Rounded edges for style */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    display: inline-block; /* Keeps the text block compact */
+    margin-bottom: 10px; /* Add spacing below the text */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Hover effect */
+}
+
+.highlight-choose:hover {
+    background-color: rgba(255, 230, 0, 0.8); /* Brighten background on hover */
+    transform: scale(1.05); /* Slight zoom-in on hover */
+}
+/* Centered Styling for Category Heading */
+.menu-category {
+    font-size: 1.8rem; /* Increase font size */
+    font-family: 'Playfair Display', serif; /* Elegant font */
+    font-weight: bold;
+    color: #ffcc00; /* Golden yellow for premium feel */
+    text-align: center;
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 2px;
+    margin-top: 30px;
+    padding: 10px;
+    background: linear-gradient(90deg, #0044cc, #00aaff); /* Blue gradient background */
+    border-radius: 10px; /* Smooth corners */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    width: fit-content; /* Fit width based on content */
+    margin-left: auto; /* Center alignment */
+    margin-right: auto; /* Center alignment */
+    display: block; /* Ensure block-level positioning */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.availability-note {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff; /* White text */
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #4e73df, #1cc88a); /* Gradient background */
+    padding: 15px 30px;
+    border-radius: 25px; /* Rounded corners for a sleek look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    letter-spacing: 1px; /* Slight letter spacing for readability */
+    transition: transform 0.3s ease, background 0.3s ease; /* Smooth transition */
+    width: 80%; /* Adjust width as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.availability-note:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    background: linear-gradient(135deg, #1cc88a, #4e73df); /*+ Reversed gradient on hover */
+}
+
+.availability-note i {
+    font-style: italic; /* Italic style for the * symbol */
+    font-weight: 600;
+}
+/* Meal Plan Section Styling */
+.meal-plan-blue {
+    background: #283593; /* Deep Blue background for sophistication */
+    padding: 50px 60px;
+    border-radius: 25px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meal-plan-blue:hover {
+    transform: scale(1.05); /* Slight scale effect for better interactivity */
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.meal-plan-blue h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #ffc107; /* Golden underline for contrast */
+}
+
+.meal-item {
+    background: rgba(255, 255, 255, 0.15); /* Slight opacity for the card */
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meal-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.meal-item h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.meal-item h4::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffc107; /* Golden underline for a pop effect */
+    bottom: -6px;
+    left: 0;
+}
+
+.meal-item p {
+    font-size: 18px;
+    color: #e3e3e3; /* Light grey text for better readability */
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.price {
+    font-size: 22px;
+    color: #ffc107; /* Golden price color for attraction */
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.meal-item:last-child {
+    border-bottom: none; /* Remove bottom border for the last item */
+}
+
+.meal-item p:last-child {
+    font-style: italic;
+    font-size: 16px;
+    color: #dddddd;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Hover Effects for Titles */
+.meal-item:hover h4 {
+    color: #ff4081; /* Change the heading color to pink on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .meal-plan-blue {
+        padding: 30px 40px;
+    }
+
+    .meal-item {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .meal-item h4 {
+        font-size: 20px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+}
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1E3A8A; /* Blue theme */
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .menu-section {
+        text-align: center;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+    .menu-category {
+        font-size: 18px; /* Even smaller font size for mobile */
+    }
+}
+.menu-category {
+    font-size: 18px;
+    line-height: 1.2; /* Keeps spacing tight */
+}
+
+
